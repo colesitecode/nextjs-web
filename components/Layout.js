@@ -9,8 +9,6 @@ export default function Layout({children}){
     
         <>
             <GlobalStyles/>
-            {/* <TopHeader/> */}
-            {/* <NavBar/> */}
             <main>{children}</main>
             <Footer/>
         </>

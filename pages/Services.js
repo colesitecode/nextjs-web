@@ -75,7 +75,7 @@ const Description = styled.h3`
 export default function Services() {
   return (
     <>
-      <Service_Div>
+      <Service_Div id="services">
 
         <Services_Title>  
           <Title_Div>

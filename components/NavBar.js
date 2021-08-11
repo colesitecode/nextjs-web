@@ -27,7 +27,6 @@ const NavLink = styled.h3`
         color: #ffffff;
     }
 `
-
 const TopHeadBTN = styled.div``
 
 const Button = styled.div`
@@ -44,15 +43,15 @@ function NavBar() {
 
             <NavMenu>
                 <NavLink>
-                <Link href="/"><a>Home</a></Link>
+                <Link href="#home"><a>Home</a></Link>
                 </NavLink>
                 
                 <NavLink>
-                <Link href="/about"><a>About</a></Link>
+                <Link href="#about"><a>About</a></Link>
                 </NavLink>
                 
                 <NavLink>
-                <Link href="/"><a>Services</a></Link>
+                <Link href="#services"><a>Services</a></Link>
                 </NavLink>
 
                 <NavLink>

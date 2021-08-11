@@ -17,7 +17,7 @@ const Footer_div = styled.div`
 const FooterBackground = styled.div`
     position: absolute;
     width: 100%;
-    width: 100%;
+    height: 100%;
     top: 0;
     bottom: 0;
     z-index: -1;
@@ -124,11 +124,10 @@ const StyledLink = styled.a`
 `
 
 function Footer() {
-    var linebreak = '\n';
     return (
         <Footer_div>
             <FooterBackground>
-                <Image src={Footer_background} alt="Moderntech footer background" />
+                <Image src={Footer_background} alt="Moderntech footer background" layout='fill' objectFit='cover'/>
             </FooterBackground>
             
             <Top_Footer>

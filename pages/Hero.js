@@ -48,7 +48,7 @@ export default function Home() {
       <TopHeader/>
       <NavBar />
 
-    <Container>
+    <Container id="home">
       
         <Hero_Title>
             <Heading>MODERNTECH HELLO WORLD</Heading>

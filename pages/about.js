@@ -119,8 +119,7 @@ const About_Col2 = styled.div`
 export default function About() {
   return (
     <>
-    <Container>
-
+    <Container id="about">
       <About_Title>  
         <Title_Div>
           <Heading>About us</Heading>
@@ -130,58 +129,56 @@ export default function About() {
           </SubHeading>
         </Title_Div>
       </About_Title>
+    <Row>
+      <Col>
+          <Image src={About_background} alt="About Background" />
+      </Col>
 
+        <Col>
+            <About_Us>
+              High competent IT Company, we offer you the most advanced solution with no compromises 
+              and employing the best technically-skilled field engineers to give you the high quality 
+              service and customer satisfaction as its highest rate are ourselves providing a comprehensive IT solution.
+            </About_Us>
 
-  <Row>
-    <Col>
-        <Image src={About_background} alt="About Background" />
-    </Col>
+            <About_Row>
+              <About_Col1>
+                <About_Col_Title>MODERNTECH</About_Col_Title>
+                <Description>
+                  Started year 2003 as a One-Stop-Shop to nationwide service organization. 
+                  Our products and services have crossed over into full nationwide service coverage.
+                </Description>
+              </About_Col1>
 
-    <Col>
-        <About_Us>
-          High competent IT Company, we offer you the most advanced solution with no compromises 
-          and employing the best technically-skilled field engineers to give you the high quality 
-          service and customer satisfaction as its highest rate are ourselves providing a comprehensive IT solution.
-        </About_Us>
+              <About_Col2>
+                <About_Col_Title1>MODERNTECH</About_Col_Title1>
+                <Description1>
+                  services are available 9/7 and can be 
+                  customized to 24/7 in preference to customer requirements for Remote, Onsite and Carry-In SLA. 
+                </Description1>
+              </About_Col2>
+            </About_Row>
 
-        <About_Row>
-          <About_Col1>
-            <About_Col_Title>MODERNTECH</About_Col_Title>
-            <Description>
-              Started year 2003 as a One-Stop-Shop to nationwide service organization. 
-              Our products and services have crossed over into full nationwide service coverage.
-            </Description>
-          </About_Col1>
+            <About_Row>
+              <About_Col3>
+                <About_Col_Title1>MODERNTECH</About_Col_Title1>
+                <Description1>
+                  Providing Operating System Installation, Application, Reimaging, 
+                  Anti-virus Installation, Helpdesk Support, Software Inventory.
+                </Description1>
+              </About_Col3>
 
-          <About_Col2>
-            <About_Col_Title1>MODERNTECH</About_Col_Title1>
-            <Description1>
-              services are available 9/7 and can be 
-              customized to 24/7 in preference to customer requirements for Remote, Onsite and Carry-In SLA. 
-            </Description1>
-          </About_Col2>
-        </About_Row>
-
-        <About_Row>
-          <About_Col3>
-            <About_Col_Title1>MODERNTECH</About_Col_Title1>
-            <Description1>
-              Providing Operating System Installation, Application, Reimaging, 
-              Anti-virus Installation, Helpdesk Support, Software Inventory.
-            </Description1>
-          </About_Col3>
-
-          <About_Col4>
-            <About_Col_Title>MODERNTECH</About_Col_Title>
-            <Description>
-              Retail Solutions and System Integration under DaaS such as Desktop, Server, Storage , 
-              Laptop, POS machine, Printer Sale, 
-              Device, Part Sales, CCTV, IP Camera & Alarms. 
-            </Description>
-          </About_Col4>
-        </About_Row>
-    </Col>
-  </Row>
+              <About_Col4>
+                <About_Col_Title>MODERNTECH</About_Col_Title>
+                <Description>
+                  Retail Solutions and System Integration under DaaS such as Desktop, Server, Storage , 
+                  Laptop, POS machine, Printer Sale, 
+                  Device, Part Sales, CCTV, IP Camera & Alarms. 
+                </Description>
+              </About_Col4>
+            </About_Row>
+        </Col>
+      </Row>
 </Container>
     </>
   )
