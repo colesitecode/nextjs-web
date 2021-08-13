@@ -5,7 +5,7 @@ import hero_background from '../components/images/background.jpg'
 import TopHeader from '../components/TopHeader'
 import NavBar from '../components/NavBar'
 import Hero_Content from '../pages/Hero_Content'
-
+import { PlayBtn_Animation } from '../styles/keyframes';
 
 const Hero = styled.div`
   /* background-image: url('${hero_background}');
@@ -54,28 +54,62 @@ const PlayBtn = styled.div`
 `
 
 const Circle = styled.div`
-  height: 60px;
-  width: 60px;
+  height: 100px;
+  width: 100px;
   background-color: #e21f36;
   border-radius: 50%;
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -30%);
-  transition: .5s;
-  &:hover{
-    box-shadow: 0 0 10px rgba(226, 31, 54, 0.3),
-                0 0 20px rgba(226, 31, 54, 0.3),
-                0 0 30px rgba(226, 31, 54, 0.3),
-                0 0 0 55px rgba(226, 31, 54, 0.1),
-                0 0 0 40px rgba(226, 31, 54, 0.1),
-                0 0 0 25px rgba(226, 31, 54, 0.1),
-                0 0 0 55px rgba(226, 31, 54, 0.1);
-    cursor: pointer;
+  display: block;
+  box-shadow: 0px 0px 9px 5px rgba(226, 31, 54, 0.5);
+  &::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-40%) translateY(-50%);
+  transform: translateX(-40%) translateY(-50%);
+  transform-origin: center center;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 25px solid #fff;
+  z-index: 100;
+  -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  cursor: pointer;
   }
-  /* &::before::after{
-
-  } */
+  &::before{
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate1 2s;
+  animation: pulsate1 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, .75);
+  top: -30%;
+  left: -30%;
+  background: rgba(198, 16, 0, 0);
+  animation: ${PlayBtn_Animation} 3s infinite;
+  cursor: pointer;
+  }
+  &:hover{
+    background-color: #fd7e14;
+    box-shadow: 0px 0px 9px 5px rgba(253, 126, 20, 0.3);
+  }
 `
 
 export default function Home() {
