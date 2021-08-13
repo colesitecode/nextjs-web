@@ -2,7 +2,6 @@ import React from 'react'
 import Head from 'next/head'
 import styled from 'styled-components'
 import hero_background from '../components/images/background.jpg'
-import { Container } from '../styles/GlobalStyle'
 import TopHeader from '../components/TopHeader'
 import NavBar from '../components/NavBar'
 import Hero_Content from '../pages/Hero_Content'
@@ -45,13 +44,38 @@ const Col = styled.div`
   height: 100%;
   width: 50%;
   display: flex;
+  position: relative;
 `
 
 const PlayBtn = styled.div`
+  width: 100%;
+  height: 100%;
+
+`
+
+const Circle = styled.div`
   height: 60px;
   width: 60px;
   background-color: #e21f36;
   border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  transition: .5s;
+  &:hover{
+    box-shadow: 0 0 10px rgba(226, 31, 54, 0.3),
+                0 0 20px rgba(226, 31, 54, 0.3),
+                0 0 30px rgba(226, 31, 54, 0.3),
+                0 0 0 55px rgba(226, 31, 54, 0.1),
+                0 0 0 40px rgba(226, 31, 54, 0.1),
+                0 0 0 25px rgba(226, 31, 54, 0.1),
+                0 0 0 55px rgba(226, 31, 54, 0.1);
+    cursor: pointer;
+  }
+  /* &::before::after{
+
+  } */
 `
 
 export default function Home() {
@@ -80,6 +104,7 @@ export default function Home() {
 
           <Col>
               <PlayBtn>
+                <Circle></Circle>
               </PlayBtn>
           </Col>
         </Row>
