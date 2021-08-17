@@ -6,6 +6,7 @@ import TopHeader from '../components/TopHeader'
 import NavBar from '../components/NavBar'
 import Hero_Content from '../pages/Hero_Content'
 import { PlayBtn_Animation } from '../styles/keyframes';
+import Button from '../styles/GlobalStyle'
 
 const Hero = styled.div`
   /* background-image: url('${hero_background}');
@@ -31,9 +32,6 @@ const SubHeading = styled.h3`
   color: #ffffff;
 `
 
-const Button = styled.button`
-`
-
 const Row = styled.div`
   width: 100%;
   height: 100%;
@@ -54,8 +52,8 @@ const PlayBtn = styled.div`
 `
 
 const Circle = styled.div`
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   background-color: #e21f36;
   border-radius: 50%;
   position: absolute;
