@@ -33,7 +33,6 @@ const Hero_Title = styled.div`
 const Icon = styled.div`
     padding: 10px;
     width: 25%;
-    color: #ffffff;
 `
 
 const Title = styled.h3`

@@ -6,7 +6,7 @@ import TopHeader from '../components/TopHeader'
 import NavBar from '../components/NavBar'
 import Hero_Content from '../pages/Hero_Content'
 import { PlayBtn_Animation } from '../styles/keyframes';
-import Button from '../styles/GlobalStyle'
+import { Button, Span1, Span2, Span3, Span4 } from '../styles/GlobalStyle'
 
 const Hero = styled.div`
   /* background-image: url('${hero_background}');
@@ -52,16 +52,15 @@ const PlayBtn = styled.div`
 `
 
 const Circle = styled.div`
-  height: 80px;
   width: 80px;
+  height: 80px;
   background-color: #e21f36;
   border-radius: 50%;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -30%);
+  position: relative;
   display: block;
-  box-shadow: 0px 0px 9px 5px rgba(226, 31, 54, 0.5);
+  margin: 100px auto;
+  box-shadow: 0px 0px 9px 8px rgba(226, 31, 54, 0.5 );
+  transition: background-color .4s ease-out 100ms;
   &::after{
   content: "";
   position: absolute;
@@ -110,6 +109,7 @@ const Circle = styled.div`
   }
 `
 
+
 export default function Home() {
   return (
     <>
@@ -130,7 +130,13 @@ export default function Home() {
             <Hero_Title>
                 <Heading>MODERNTECH</Heading>
                 <SubHeading>Your Nationwide On-the-Ground Information Technology  Partner.</SubHeading>
-              <Button>Contact Us</Button>
+                <Button>
+                  Contact Us
+                  <Span1/>
+                  <Span2/>
+                  <Span3/>
+                  <Span4/>
+                </Button>
             </Hero_Title>
           </Col>
 

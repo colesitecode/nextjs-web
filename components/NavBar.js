@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import Link from 'next/link'
+import { Button, Span1, Span2, Span3, Span4 } from '../styles/GlobalStyle'
 
 const Nav = styled.div`
     width: 100%;
@@ -28,13 +29,6 @@ const NavLink = styled.h3`
     }
 `
 const TopHeadBTN = styled.div``
-
-const Button = styled.div`
-    font-size: 20px;
-    background-color: #e21f36;
-    padding: 8px 15px 8px 15px;
-    color: #ffffff;
-`
 
 function NavBar() {
     return (
@@ -68,7 +62,13 @@ function NavBar() {
             </NavMenu>
 
             <TopHeadBTN>
-                <Button>Get a Quote</Button>
+                <Button>
+                  Get a Quote
+                  <Span1/>
+                  <Span2/>
+                  <Span3/>
+                  <Span4/>
+                </Button>
             </TopHeadBTN>
         </Nav>
     )

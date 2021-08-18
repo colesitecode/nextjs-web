@@ -38,7 +38,7 @@ export const Container = styled.div`
 }
 `
 
-const Button = styled.button`
+export const Button = styled.button`
   background: #e21f36;
   transition: background-color .4s ease-out 100ms;
   padding: 10px 20px;
@@ -51,17 +51,18 @@ const Button = styled.button`
   font-size: 20px;
   letter-spacing: 2.5px;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-decoration: none;
   -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  border: none;
   &:hover{
     background-color: #fd7e14;
   }
 `
 
-const Span1 = styled.div`
+export const Span1 = styled.div`
 position: absolute;
   top: 0px;
   left: 0px;
@@ -94,7 +95,7 @@ position: absolute;
 }
 `
 
-const Span2 = styled.div`
+export const Span2 = styled.div`
 position: absolute;
   top: 0px;
   right: 0px;
@@ -127,7 +128,7 @@ position: absolute;
 }
 `
 
-const Span3 = styled.div`
+export const Span3 = styled.div`
 position: absolute;
   bottom: 0px;
   left: 0px;
@@ -160,7 +161,7 @@ position: absolute;
 }
 `
 
-const Span4 = styled.div`
+export const Span4 = styled.div`
 position: absolute;
   top: 0px;
   left: 0px;

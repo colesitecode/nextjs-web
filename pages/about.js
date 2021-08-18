@@ -50,29 +50,6 @@ const About_Row = styled.div`
   margin-bottom: 18px;
 `
 
-const About_Col1 = styled.div`
-  margin-right: 15px;
-  width: 50%;
-  background: #000219;
-  padding: 13px;
-  border-left: 3px solid #D63384;
-`
-const About_Col3 = styled.div`
-  margin-right: 15px;
-  width: 50%;
-  background: #ffffff;
-  padding: 13px;
-  border-left: 3px solid #E21F36;
-`
-
-const About_Col4 = styled.div`
-  margin-right: 15px;
-  width: 50%;
-  background: #000219;
-  padding: 13px;
-  border-left: 3px solid #D63384;
-`
-
 const About_Col_Title = styled.h2`
   color: #FFFFFF;
   font-weight: 800;
@@ -97,6 +74,43 @@ const Description1 = styled.h3`
   font-weight: normal;
   font-size: 15px;
 `
+
+const About_Col1 = styled.div`
+  margin-right: 15px;
+  width: 50%;
+  background: #000219;
+  padding: 13px;
+  border-left: 3px solid #D63384;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  &::after{
+  content: "";
+  height: 100%; 
+  left: 0; 
+  top: 0; 
+  width: 0px;  
+  position: absolute; 
+  /* transition: all 0.3s ease 0s; 
+  -webkit-transition: all 0.3s ease 0s;  */
+  -webkit-transition: all 0.4s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+  transition: all 0.4s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+  z-index: -1;
+  }
+  &:hover::after{
+    background: #ffffff;
+    width: 100%;
+  }
+  &:hover{
+  ${About_Col_Title}{
+    color: #000219;
+  }
+  ${Description}{
+    color: #4B5280;
+  }
+  }
+`
+
 const About_Col2 = styled.div`
   margin-right: 15px;
   width: 50%;
@@ -105,15 +119,104 @@ const About_Col2 = styled.div`
   border-left: 3px solid #E21F36;
   position: relative;
   overflow: hidden;
-  &:hover{
+  z-index: 2;
+  &::after{
+  content: "";
+  height: 100%; 
+  left: 0; 
+  top: 0; 
+  width: 0px;  
+  position: absolute; 
+  /* transition: all 0.3s ease 0s; 
+  -webkit-transition: all 0.3s ease 0s;  */
+  -webkit-transition: all 0.4s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+  transition: all 0.4s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+  z-index: -1;
+  }
+  &:hover::after{
     background: #000219;
+    width: 100%;
+  }
+  &:hover{
   ${About_Col_Title1}{
     color: #ffffff;
   }
   ${Description1}{
     color: #ffffff;
   }
-}
+  }
+`
+
+const About_Col3 = styled.div`
+  margin-right: 15px;
+  width: 50%;
+  background: #ffffff;
+  padding: 13px;
+  border-left: 3px solid #E21F36;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  &::after{
+  content: "";
+  height: 100%; 
+  left: 0; 
+  top: 0; 
+  width: 0px;  
+  position: absolute; 
+  /* transition: all 0.3s ease 0s; 
+  -webkit-transition: all 0.3s ease 0s;  */
+  -webkit-transition: all 0.4s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+  transition: all 0.4s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+  z-index: -1;
+  }
+  &:hover::after{
+    background: #000219;
+    width: 100%;
+  }
+  &:hover{
+  ${About_Col_Title1}{
+    color: #ffffff;
+  }
+  ${Description1}{
+    color: #ffffff;
+  }
+  }
+`
+
+const About_Col4 = styled.div`
+  margin-right: 15px;
+  width: 50%;
+  background: #000219;
+  padding: 13px;
+  border-left: 3px solid #D63384;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  &::after{
+  content: "";
+  height: 100%; 
+  left: 0; 
+  top: 0; 
+  width: 0px;  
+  position: absolute; 
+  /* transition: all 0.3s ease 0s; 
+  -webkit-transition: all 0.3s ease 0s;  */
+  -webkit-transition: all 0.4s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+  transition: all 0.4s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+  z-index: -1;
+  }
+  &:hover::after{
+    background: #ffffff;
+    width: 100%;
+  }
+  &:hover{
+  ${About_Col_Title}{
+    color: #000219;
+  }
+  ${Description}{
+    color: #4B5280;
+  }
+  }
 `
 
 export default function About() {
