@@ -8,10 +8,8 @@ const GlobalStyles = createGlobalStyle`
   }
   html {
     scroll-behavior: smooth;
-
   }
   body {
-    /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap'); */
     font-family: 'Lato', sans-serif;
     cursor: default;
     background: #F8F9FA;
