@@ -13,6 +13,11 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Lato', sans-serif;
     cursor: default;
     background: #F8F9FA;
+
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   a {
     text-decoration: none;
