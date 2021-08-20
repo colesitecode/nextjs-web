@@ -8,6 +8,8 @@ const GlobalStyles = createGlobalStyle`
   }
   html {
     scroll-behavior: smooth;
+    height:100%;
+    overflow:hidden;
   }
   body {
     font-family: 'Lato', sans-serif;
@@ -16,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
 
     perspective: 1px;
     transform-style: preserve-3d;
+    height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -45,7 +48,7 @@ export const Button = styled.button`
   background: #e21f36;
   transition: background-color .4s ease-out 100ms;
   padding: 10px 20px;
-  margin: 12px;
+  margin: 15px 0;
   display: inline-block;
   -webkit-transform: translate(0%, 0%);
   transform: translate(0%, 0%);

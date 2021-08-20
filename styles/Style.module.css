@@ -1,0 +1,50 @@
+.footer{
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+}
+.footer, .footer:before{
+    background: 50% 50% / cover;
+}
+.footer:before{
+    position: absolute;
+    bottom: 0;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url("https://images.unsplash.com/photo-1529738609971-27263e03fce4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2ac22fee4536f6c171792095cb9d051e&auto=format&fit=crop&w=1353&q=80");
+    background-size: cover;
+    transform-origin: center center 0;
+    transform:  translateZ(-1px) scale(2);
+    z-index: -1;
+    height: 100vh
+}
+
+.Hero_background{
+    background: url("../components/images/background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Service_background{
+    background: url("../components/images/service_background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Footer_background{
+    background: url("../components/images/footer_background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

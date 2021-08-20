@@ -7,13 +7,14 @@ import NavBar from '../components/NavBar'
 import Hero_Content from '../pages/Hero_Content'
 import { PlayBtn_Animation } from '../styles/keyframes';
 import { Button, Span1, Span2, Span3, Span4 } from '../styles/GlobalStyle'
+import Style from '../styles/Style.module.css'
 
 const Hero = styled.div`
   /* background-image: url('${hero_background}');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */
-  background: #0C1444;
+  /* background: #0C1444; */
   width: 100%;
   height: 100vh;
   margin-bottom: -100px;
@@ -22,6 +23,7 @@ const Hero = styled.div`
 const Hero_Title = styled.div`
   text-align: left;
   margin-top: 80px;
+  margin-left: 100px;
 `
 
 const Heading = styled.h1`
@@ -30,6 +32,7 @@ const Heading = styled.h1`
 
 const SubHeading = styled.h3`
   color: #ffffff;
+  padding: 8px 0;
 `
 
 const Row = styled.div`
@@ -123,7 +126,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet" />
       </Head>
 
-    <Hero id="home">
+    <Hero id="home" className={Style.Hero_background}>
       {/* Top Header Page */}
       <TopHeader/>
       {/* NavBar Page */}
@@ -150,10 +153,11 @@ export default function Home() {
               </PlayBtn>
           </Col>
         </Row>
-    </Hero>
 
-    {/* Hero Content Page */}
-    <Hero_Content/>
+    </Hero>
+    
+        {/* Hero Content Page */}
+        <Hero_Content/>
     
     </>
    

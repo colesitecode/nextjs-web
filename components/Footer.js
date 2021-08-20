@@ -4,8 +4,7 @@ import { CgPhone, CgFacebook } from 'react-icons/cg';
 import {  FaMapMarkerAlt, FaEnvelopeOpenText } from 'react-icons/fa';
 import {FiCodesandbox} from 'react-icons/fi';
 import Link from 'next/link'
-import Image from 'next/image'
-import Footer_background from '../components/images/footer_background.jpg'
+import style from '../styles/Style.module.css'
 
 const Footer_div = styled.div`
     margin-top: 100px;
@@ -125,10 +124,7 @@ const StyledLink = styled.a`
 
 function Footer() {
     return (
-        <Footer_div>
-            <FooterBackground>
-                <Image src={Footer_background} alt="Moderntech footer background" layout='fill' objectFit='cover'/>
-            </FooterBackground>
+        <Footer_div className={style.Footer_background}>
             
             <Top_Footer>
                 <Top_Row>
