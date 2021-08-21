@@ -87,6 +87,7 @@ const Icon = styled.div`
     &:hover{
         transform: translateY(-3px);
         background: #E21F36;
+        transition: all ease 0.5s;
     }
 `
 

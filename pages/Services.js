@@ -54,8 +54,7 @@ const Border1 = styled.div`
   width:0;
   height:0;
   border-top:2px solid #e21f36;
-  border-image: ;
-
+  
   position:absolute;
   background:none;
   transition:all .5s ease-in-out;

@@ -97,6 +97,10 @@ const About_Col1 = styled.div`
   transition: all 0.4s cubic-bezier(0.79, 0.33, 0.14, 0.53);
   z-index: -1;
   }
+  &:hover{
+    transform: translateY(-3px);
+    transition: all ease 0.5s;
+  }
   &:hover::after{
     background: #ffffff;
     width: 100%;
@@ -132,6 +136,10 @@ const About_Col2 = styled.div`
   -webkit-transition: all 0.4s cubic-bezier(0.79, 0.33, 0.14, 0.53);
   transition: all 0.4s cubic-bezier(0.79, 0.33, 0.14, 0.53);
   z-index: -1;
+  }
+  &:hover{
+    transform: translateY(-3px);
+    transition: all ease 0.5s;
   }
   &:hover::after{
     background: #000219;
@@ -169,6 +177,10 @@ const About_Col3 = styled.div`
   transition: all 0.4s cubic-bezier(0.79, 0.33, 0.14, 0.53);
   z-index: -1;
   }
+  &:hover{
+    transform: translateY(-3px);
+    transition: all ease 0.5s;
+  }
   &:hover::after{
     background: #000219;
     width: 100%;
@@ -204,6 +216,10 @@ const About_Col4 = styled.div`
   -webkit-transition: all 0.4s cubic-bezier(0.79, 0.33, 0.14, 0.53);
   transition: all 0.4s cubic-bezier(0.79, 0.33, 0.14, 0.53);
   z-index: -1;
+  }
+  &:hover{
+        transform: translateY(-3px);
+        transition: all ease 0.5s;
   }
   &:hover::after{
     background: #ffffff;
