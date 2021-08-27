@@ -61,6 +61,8 @@ const Nav = styled.div`
     padding-left: 25px;
     padding-right: 25px;
     background-color: rgba(0, 2, 25, 0.33);
+    position: sticky;
+    top: 0;
 `
 
 const Logo = styled.div`
